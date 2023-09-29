@@ -1,0 +1,7 @@
+{
+  "parent": "item/handheld",
+  "textures": {
+    "layer0": "toolmod:items/teleport_staff"
+  },
+  "__comment__": "layer0 where is and name of png file"
+}

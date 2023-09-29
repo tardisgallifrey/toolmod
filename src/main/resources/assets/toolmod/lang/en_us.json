@@ -1,0 +1,18 @@
+{
+
+  "itemGroup.toolmod": "Tardis Teleport Staff",
+
+  "item.toolmod.teleport_staff": "Teleport Staff",
+
+  "item.toolmod.pink_axe": "Pink Axe",
+
+  "item.toolmod.pink_hoe": "Pink Hoe",
+
+  "item.toolmod.pink_shovel": "Pink Shovel",
+
+  "item.toolmod.pink_pickaxe": "Pink Pickaxe",
+
+  "item.toolmod.pink_sword": "Pink Sword",
+
+  "__comment__": "lang json loads important names"
+}
