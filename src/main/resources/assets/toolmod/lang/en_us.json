@@ -16,5 +16,13 @@
 
   "item.toolmod.thors_sword": "Thor's Sword",
 
+  "item.toolmod.pink_helmet": "Pink Helmet",
+
+  "item.toolmod.pink_chestplate": "Pink Chestplate",
+
+  "item.toolmod.pink_leggings": "Pink Leggings",
+
+  "item.toolmod.pink_boots": "Pink Boots",
+
   "__comment__": "lang json loads important names"
 }

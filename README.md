@@ -1,8 +1,14 @@
 # Tardisgallifrey's Teleport Staff Mod
 
 <p>This mod is a minimal mod for a teleport staff source type in
- Minecraft 1.19.  It also contains the basic init for a set of 
-pink tools.  It is from Luke Graham's tutorial on 
+ Minecraft 1.19.</p>
+
+<p>It also contains the basic init for a set of 
+pink tools and a set of pink armor.  These two items are created
+in a similar fashion and it was expedient to do both in one
+mod</p>
+
+<p>It is from Luke Graham's tutorial on 
 Minecraft mods. It does have some changes to his tutorial.</p>
 
 <p>This mod is in accordance with Mojang, Microsoft, and Forge 

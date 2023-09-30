@@ -1,8 +1,10 @@
 package com.tardisgallifrey.toolmod.Init;
 
 import com.tardisgallifrey.toolmod.util.ModItemTier;
+import com.tardisgallifrey.toolmod.util.ModArmorMaterial;
 import com.tardisgallifrey.toolmod.ToolModMain;
 import com.tardisgallifrey.toolmod.items.TeleportStaff;
+import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
@@ -40,7 +42,7 @@ public class ItemInit {
     public static final RegistryObject<Item> THORS_SWORD =
             ITEMS.register("thors_sword",
                     () -> new SwordItem(ModItemTier.GODLEVEL,
-                            3, -2.4F,
+                            1000, -5.5F,
                             new Item.Properties()
                                     .tab(ModCreativeTab.instance)));
 
@@ -71,6 +73,33 @@ public class ItemInit {
                     new Item.Properties()
                             .tab(ModCreativeTab.instance)));
 
+
+    //REGISTER OF ARMOR
+    public static final RegistryObject<Item> PINK_HELMET =
+            ITEMS.register("pink_helmet",
+            () -> new ArmorItem(ModArmorMaterial.PINK,
+                    EquipmentSlot.HEAD,
+                    new Item.Properties()
+                            .tab(ModCreativeTab.instance)));
+
+    public static final RegistryObject<Item> PINK_CHESTPLATE =
+            ITEMS.register("pink_chestplate",
+            () -> new ArmorItem(ModArmorMaterial.PINK,
+                    EquipmentSlot.CHEST,
+                    new Item.Properties().tab(ModCreativeTab.instance)));
+
+    public static final RegistryObject<Item> PINK_LEGGINGS =
+            ITEMS.register("pink_leggings",
+            () -> new ArmorItem(ModArmorMaterial.PINK,
+                    EquipmentSlot.LEGS,
+                    new Item.Properties().tab(ModCreativeTab.instance)));
+
+    public static final RegistryObject<Item> PINK_BOOTS =
+            ITEMS.register("pink_boots",
+            () -> new ArmorItem(ModArmorMaterial.PINK,
+                    EquipmentSlot.FEET,
+                    new Item.Properties().tab(ModCreativeTab.instance)));
+
     //This creates a Creative Mode Tab for all items
     public static class ModCreativeTab extends CreativeModeTab {
         private ModCreativeTab(int index, String label) {
@@ -79,6 +108,7 @@ public class ItemInit {
 
         @Override
         public @NotNull ItemStack makeIcon() {
+
             return new ItemStack(TELEPORT_STAFF.get());
         }
 

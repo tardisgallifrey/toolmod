@@ -1,0 +1,7 @@
+{
+  "parent": "item/generated",
+  "textures": {
+    "layer0": "toolmod:items/netherite_helmet"
+  },
+  "__comment__": "layer0 where is and name of png file"
+}
