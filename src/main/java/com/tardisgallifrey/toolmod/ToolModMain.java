@@ -7,6 +7,11 @@ import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 
+
+
+//This is the project for tools and armor
+//Both are created in a similar manner
+
 @Mod(ToolModMain.MOD_ID)
 public class ToolModMain {
     public static final String MOD_ID = "toolmod";

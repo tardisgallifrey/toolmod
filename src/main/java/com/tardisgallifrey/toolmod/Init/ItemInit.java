@@ -37,6 +37,13 @@ public class ItemInit {
                     new Item.Properties()
                             .tab(ModCreativeTab.instance)));
 
+    public static final RegistryObject<Item> THORS_SWORD =
+            ITEMS.register("thors_sword",
+                    () -> new SwordItem(ModItemTier.GODLEVEL,
+                            3, -2.4F,
+                            new Item.Properties()
+                                    .tab(ModCreativeTab.instance)));
+
     public static final RegistryObject<Item> PINK_PICKAXE =
             ITEMS.register("pink_pickaxe",
             () -> new PickaxeItem(ModItemTier.PINK,
