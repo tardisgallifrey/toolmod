@@ -11,6 +11,8 @@ import net.minecraft.sounds.SoundEvents;
 import org.jetbrains.annotations.NotNull;
 import java.util.function.Supplier;
 
+//Very similar to the Material class for Items/Tools
+
 public enum ModArmorMaterial implements ArmorMaterial {
     PINK(ToolModMain.MOD_ID + ":pink",
             200,
@@ -20,6 +22,15 @@ public enum ModArmorMaterial implements ArmorMaterial {
             3.0F,
             0.1F, () -> {
         return Ingredient.of(Items.STICK);
+    }),
+    FLAMERESIST(ToolModMain.MOD_ID + ":flameresist",
+            500,
+            new int[]{7, 10, 20, 7},
+            50,
+            SoundEvents.AMBIENT_UNDERWATER_ENTER,
+            10.0F,
+            1.0F, () -> {
+        return Ingredient.of(Items.NETHERITE_INGOT);
     });
 
     private static final int[] HEALTH_PER_SLOT =

@@ -18,10 +18,18 @@ public enum ModItemTier implements Tier {
     //fill its abilities.
     //the enumerations are written as an
     //open array separated by commas.
-    PINK(3, 3000, 10.0F, 5.0F, 5, () -> {
+    PINK(3,
+            3000,
+            10.0F,
+            5.0F,
+            5, () -> {
         return Ingredient.of(Items.STICK);
     }),
-    GODLEVEL(10, 30000, 100.0F, 30.0F, 100, ()->{
+    GODLEVEL(10,
+            300,
+            100.0F,
+            30.0F,
+            100, ()->{
         return Ingredient.of(Items.NETHERITE_INGOT);
     });
 

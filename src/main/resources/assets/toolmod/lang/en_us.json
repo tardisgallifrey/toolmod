@@ -24,5 +24,7 @@
 
   "item.toolmod.pink_boots": "Pink Boots",
 
+  "item.toolmod.flaming_chestplate": "Flame Resist Chestplate",
+
   "__comment__": "lang json loads important names"
 }

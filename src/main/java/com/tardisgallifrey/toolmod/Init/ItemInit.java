@@ -4,6 +4,7 @@ import com.tardisgallifrey.toolmod.util.ModItemTier;
 import com.tardisgallifrey.toolmod.util.ModArmorMaterial;
 import com.tardisgallifrey.toolmod.ToolModMain;
 import com.tardisgallifrey.toolmod.items.TeleportStaff;
+import com.tardisgallifrey.toolmod.items.FlamingArmorItem;
 import net.minecraft.world.entity.EquipmentSlot;
 import net.minecraft.world.item.*;
 import net.minecraftforge.registries.DeferredRegister;
@@ -35,14 +36,14 @@ public class ItemInit {
     public static final RegistryObject<Item> PINK_SWORD =
             ITEMS.register("pink_sword",
             () -> new SwordItem(ModItemTier.PINK,
-                    3, -2.4F,
+                    3, -3.0F,
                     new Item.Properties()
                             .tab(ModCreativeTab.instance)));
 
     public static final RegistryObject<Item> THORS_SWORD =
             ITEMS.register("thors_sword",
                     () -> new SwordItem(ModItemTier.GODLEVEL,
-                            1000, -5.5F,
+                            1000, -7.0F,
                             new Item.Properties()
                                     .tab(ModCreativeTab.instance)));
 
@@ -74,7 +75,7 @@ public class ItemInit {
                             .tab(ModCreativeTab.instance)));
 
 
-    //REGISTER OF ARMOR
+    //REGISTRY OF ARMOR
     public static final RegistryObject<Item> PINK_HELMET =
             ITEMS.register("pink_helmet",
             () -> new ArmorItem(ModArmorMaterial.PINK,
@@ -99,6 +100,13 @@ public class ItemInit {
             () -> new ArmorItem(ModArmorMaterial.PINK,
                     EquipmentSlot.FEET,
                     new Item.Properties().tab(ModCreativeTab.instance)));
+
+
+    public static final RegistryObject<Item> FLAMING_CHESTPLATE = ITEMS.register("flaming_chestplate",
+            () -> new FlamingArmorItem(ModArmorMaterial.FLAMERESIST,
+                    EquipmentSlot.CHEST,
+                    new Item.Properties()
+                            .tab(ModCreativeTab.instance)));
 
     //This creates a Creative Mode Tab for all items
     public static class ModCreativeTab extends CreativeModeTab {
