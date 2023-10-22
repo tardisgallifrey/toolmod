@@ -1,5 +1,6 @@
 package com.tardisgallifrey.toolmod;
 
+import com.tardisgallifrey.toolmod.Init.EnchantmentInit;
 import com.tardisgallifrey.toolmod.Init.ItemInit;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -21,6 +22,7 @@ public class ToolModMain {
 
         modEventBus.addListener(this::setup);
         ItemInit.ITEMS.register(modEventBus);
+        EnchantmentInit.ENCHANTMENTS.register(modEventBus);
 
         MinecraftForge.EVENT_BUS.register(this);
     }
